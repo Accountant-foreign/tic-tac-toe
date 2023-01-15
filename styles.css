@@ -20,7 +20,7 @@ html, body{
     align-items: center;
 }
 
-.container{
+#container{
     margin: auto;
     margin-top: 5%;
     height: 60vh;
@@ -45,7 +45,7 @@ html, body{
 
 /* *********************** */
 /* The cross */
-.cross {
+.X {
     position: relative;
     height: 100%; /* this can be anything */
     width: 100%;  /* ...but maintain 1:1 aspect ratio */
@@ -53,28 +53,62 @@ html, body{
     flex-direction: column;
     justify-content: center;
 }
-.cross::before,
-.cross::after {
+.X::before,
+.X::after {
     position: absolute;
     content: '';
     width: 100%;
     height: 4px; /* cross thickness */
     background-color: #C5C6C7;
 }
-.cross::before {
+.X::before {
     transform: rotate(45deg);
 }
-.cross::after {
+.X::after {
     transform: rotate(-45deg);
 }
 
 /* *************** */
 /* The O */
-.bigO{
+.O{
     height: 85%;
     width: 85%;
     margin-top: 5%;
     margin-left: 5%;
     border: 4px solid #C5C6C7;
     border-radius: 50%;
+}
+
+/****************/
+/* Player div */
+.player{
+    height: min-content;
+    font-size: medium;
+    background-color: none;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+
+    color: #fff;
+}
+
+#restart{
+    margin-top: 1%;
+
+    box-shadow: 0 0 5px #66FCF1 ;
+    color: #C5C6C7;
+    background-color: #1F2833;
+    border: none;
+    border-radius: 3px;
+    transition: 0.2s;
+    height: 20px;
+}
+#restart:hover{
+    transform: scale(1.2);
+}
+#restart:active{
+    opacity: 0.8;
 }
