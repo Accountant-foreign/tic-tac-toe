@@ -82,7 +82,7 @@ let markDown=(function(){
                 span.parentElement.innerHTML="Player "+currentPlayer+" wins!";
                 document.body.innerHTML=document.body.innerHTML;
             }
-            if(gameBoard[0]==gameBoard[4]&&gameBoard[4]==gameBoard[8]||gameBoard[2]==gameBoard[4]&&gameBoard==gameBoard[6]){
+            if(gameBoard[0]==gameBoard[4]&&gameBoard[4]==gameBoard[8]||gameBoard[2]==gameBoard[4]&&gameBoard[4]==gameBoard[6]){
                 span.parentElement.innerHTML="Player "+currentPlayer+" wins!";
                 document.body.innerHTML=document.body.innerHTML;
             }
